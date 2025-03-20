@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 - Exercício 2</title>
+</head>
+<body>
+    <script>
+        function converterTemperatura() {
+            // Solicita ao usuário que insira a temperatura em Fahrenheit
+            let fahrenheit = prompt("Digite a temperatura em Fahrenheit:");
+
+            // Verifica se o valor inserido é válido
+            if (fahrenheit !== null && !isNaN(fahrenheit)) {
+                // Converte para Celsius
+                let celsius = (fahrenheit - 32) * 5 / 9;
+                // Exibe a temperatura em Celsius
+                alert(`A temperatura em Celsius é: ${celsius.toFixed(2)}°C`);
+            } else {
+                alert("Por favor, insira um número válido.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Aula 2 - Exercício 2</h1>
+    <button onclick="converterTemperatura()">Converter Temperatura</button>
+</body>
+</html>
